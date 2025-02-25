@@ -6,8 +6,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const merchantKey = "your_merchant_key";  // Replace with your actual PayU Merchant Key
-const salt = "your_salt_key";  // Replace with your actual PayU Salt Key
+const merchantKey = "b1n0dl";  // Replace with your actual PayU Merchant Key
+const salt = "vLrmUcy3mM2pLBbncMQJBsK4YOcKJ3HB";  // Replace with your actual PayU Salt Key
 
 app.post("/generateHash", (req, res) => {
     const { txnid, amount, productinfo, firstname, email } = req.body;
